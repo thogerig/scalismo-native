@@ -19,7 +19,7 @@ package scalismo.support.nativelibs;
 import scalismo.support.nativelibs.impl.*;
 import scalismo.support.nativelibs.jhdf5.JhdfLibraryBundle;
 import scalismo.support.nativelibs.jogl.JoglLibraryBundle;
-import scalismo.support.nativelibs.vtk6.Vtk6LibraryBundle;
+import scalismo.support.nativelibs.vtk8.Vtk8LibraryBundle;
 
 import java.io.File;
 import java.util.*;
@@ -31,7 +31,7 @@ public class NativeLibraryBundlesImplementation {
      * VERSION INFORMATION
      * ===================
      */
-    public static final int MAJOR_VERSION = 4;
+    public static final int MAJOR_VERSION = 5;
     public static final int MINOR_VERSION = 0;
 
     private static final Map<String, NativeLibraryBundle> _BUNDLES = setupBundles();
@@ -43,7 +43,7 @@ public class NativeLibraryBundlesImplementation {
 
         addBundle(map, new JhdfLibraryBundle());
         addBundle(map, new JoglLibraryBundle());
-        addBundle(map, new Vtk6LibraryBundle());
+        addBundle(map, new Vtk8LibraryBundle());
 
         return map;
     }

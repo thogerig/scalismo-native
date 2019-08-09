@@ -16,12 +16,12 @@
 
 package scalismo.support.nativelibs.jogl.troubleshoot;
 
+import com.jogamp.opengl.GLException;
+import com.jogamp.opengl.GLProfile;
 import scalismo.support.nativelibs.InitializationMode;
 import scalismo.support.nativelibs.NativeLibraryBundles;
 import scalismo.support.nativelibs.NativeLibraryException;
 
-import javax.media.opengl.GLException;
-import javax.media.opengl.GLProfile;
 import java.util.HashMap;
 import java.util.Map;
 

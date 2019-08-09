@@ -3,7 +3,10 @@
 
 resolvers += "Statismo (public)" at "http://statismo.cs.unibas.ch/repository/public"
 
-libraryDependencies += "ch.unibas.cs.gravis" % "scalismo-native-stub" % productVersion
+libraryDependencies ++= Seq(
+  "ch.unibas.cs.gravis" % "scalismo-native-stub" % productVersion
+)
+
 
 publishFixup <<= (baseDirectory, name, fixupExclude) map { (base, productName, exclude) =>
   val topDir = s"$publishPrefix/${productPackage.mkString("/")}"

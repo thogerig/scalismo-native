@@ -33,7 +33,7 @@ public class NativeLibraryBundles {
      * A stub version 2.3 will accept an implementation with version 2.5,
      * but neither version 2.2 nor 1.x or 3.x would be accepted.
      */
-    public static final int MAJOR_VERSION = 4;
+    public static final int MAJOR_VERSION = 5;
     public static final int MINOR_VERSION = 0;
 
     private static final String IMPLEMENTATION_CLASS_NAME = NativeLibraryBundles.class.getPackage().getName() + ".NativeLibraryBundlesImplementation";

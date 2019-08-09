@@ -16,11 +16,11 @@
 
 package scalismo.support.nativelibs.jogl.troubleshoot;
 
+import com.jogamp.opengl.*;
+import com.jogamp.opengl.awt.GLCanvas;
 import com.jogamp.opengl.util.FPSAnimator;
 import scalismo.support.nativelibs.jogl.troubleshoot.gl3.GL3Sample;
 
-import javax.media.opengl.*;
-import javax.media.opengl.awt.GLCanvas;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;

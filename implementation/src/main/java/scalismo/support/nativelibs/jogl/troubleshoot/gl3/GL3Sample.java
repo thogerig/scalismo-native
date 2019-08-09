@@ -17,9 +17,9 @@
 package scalismo.support.nativelibs.jogl.troubleshoot.gl3;
 
 import com.jogamp.common.nio.Buffers;
+import com.jogamp.opengl.*;
+import com.jogamp.opengl.awt.GLCanvas;
 
-import javax.media.opengl.*;
-import javax.media.opengl.awt.GLCanvas;
 import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.IOException;

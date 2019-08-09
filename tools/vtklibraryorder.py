@@ -4,7 +4,7 @@
 #
 # Usage:
 # On linux call python vtklibraryorder dir,
-# where dir is the directory containing all vtk libraries.  
+# where dir is the directory containing all vtk libraries.
 #
 
 import sys

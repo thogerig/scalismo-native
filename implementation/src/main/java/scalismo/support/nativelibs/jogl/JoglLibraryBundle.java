@@ -17,12 +17,13 @@
 package scalismo.support.nativelibs.jogl;
 
 import com.jogamp.common.jvm.JNILibLoaderBase;
+import com.jogamp.opengl.GLProfile;
 import scalismo.support.nativelibs.impl.NativeLibraryBundle;
 import scalismo.support.nativelibs.NativeLibraryException;
 import scalismo.support.nativelibs.impl.NativeLibraryInfo;
 import scalismo.support.nativelibs.impl.Platform;
+import scalismo.support.nativelibs.jogl.troubleshoot.Jogl;
 
-import javax.media.opengl.GLProfile;
 import javax.swing.*;
 import java.awt.*;
 import java.util.List;
@@ -37,7 +38,7 @@ public class JoglLibraryBundle extends NativeLibraryBundle {
     }
 
     public String getVersion() {
-        return "2.2.4";
+        return "2.3.2";
     }
 
     @Override
@@ -91,6 +92,7 @@ public class JoglLibraryBundle extends NativeLibraryBundle {
 
     @Override
     protected void onInitializeEnd() throws NativeLibraryException {
+
         try {
             getVerifierRunnable().run();
         } catch (WrongThreadException w) {
