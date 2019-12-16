@@ -70,10 +70,9 @@ object Build extends sbt.Build {
   lazy val impl_all = implProject("all", None)
   lazy val impl_linux64 = implProject("linux64", Some("mac_x86_64 windows_amd64 windows_x86"))
   lazy val impl_mac64 = implProject("mac64", Some("linux_amd64 windows_amd64 windows_x86"))
-  lazy val impl_win64 = implProject("windows32", Some("linux_amd64 mac_x86_64 windows_amd64"))
-  lazy val impl_win32 = implProject("windows64", Some("linux_amd64 mac_x86_64 windows_x86"))
+  lazy val impl_win64 = implProject("windows64", Some("linux_amd64 mac_x86_64"))
   lazy val impl_win = implProject("windows", Some("linux_amd64 mac_x86_64"))
 
-  lazy val root = Project(id = "scalismo-native", base = file(".")) aggregate(stub, impl_all, impl_linux64, impl_mac64, impl_win64, impl_win32, impl_win)
+  lazy val root = Project(id = "scalismo-native", base = file(".")) aggregate(stub, impl_all, impl_linux64, impl_mac64, impl_win64, impl_win)
 
 }

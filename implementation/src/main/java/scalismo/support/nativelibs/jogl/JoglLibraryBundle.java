@@ -45,7 +45,6 @@ public class JoglLibraryBundle extends NativeLibraryBundle {
     protected void getSupportedPlatformsInto(List<String> list) {
         list.add(Platform.PLATFORM_LINUX64);
         list.add(Platform.PLATFORM_WIN64);
-        list.add(Platform.PLATFORM_WIN32);
         list.add(Platform.PLATFORM_MAC64);
     }
 
@@ -63,8 +62,6 @@ public class JoglLibraryBundle extends NativeLibraryBundle {
             list.add("nativewindow_x11");
         } else if (Platform.isMac()) {
             list.add("nativewindow_macosx");
-        } else if (Platform.isWindows()) {
-            list.add("nativewindow_win32");
         }
         list.add("jogl_desktop");
         list.add("jogl_mobile");

@@ -22,9 +22,9 @@ crossPaths in ThisBuild := false
 
 publishLocal := {}
 
-publishLocal <<= publishLocal dependsOn (publishLocalFixup in impl_all, publishLocalFixup in impl_linux64, publishLocalFixup in impl_mac64, publishLocalFixup in impl_win64, publishLocalFixup in impl_win32, publishLocalFixup in impl_win)
+publishLocal <<= publishLocal dependsOn (publishLocalFixup in impl_all, publishLocalFixup in impl_linux64, publishLocalFixup in impl_mac64, publishLocalFixup in impl_win64, publishLocalFixup in impl_win)
 
 publish := {}
 
-publish <<= publish dependsOn (publishFixup in impl_all, publishFixup in impl_linux64, publishFixup in impl_mac64, publishFixup in impl_win64, publishFixup in impl_win32, publishFixup in impl_win)
+publish <<= publish dependsOn (publishFixup in impl_all, publishFixup in impl_linux64, publishFixup in impl_mac64, publishFixup in impl_win64, publishFixup in impl_win)
 

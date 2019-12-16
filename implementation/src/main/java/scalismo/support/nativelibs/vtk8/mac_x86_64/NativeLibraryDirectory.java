@@ -22,8 +22,11 @@ public class NativeLibraryDirectory extends scalismo.support.nativelibs.impl.Nat
 
 	@Override
 	protected String mapToResourceName(String baseName) {
-		if (baseName.endsWith("-6.1")) {
-			baseName = baseName+".1";
+		if (!baseName.endsWith("Java")) {
+			baseName = baseName.concat("-8.2");
+		}
+		if(baseName.endsWith("WrappingJava")) {
+			baseName = baseName.concat("-8.2");
 		}
 		String name = System.mapLibraryName(baseName);
 		return name.replace(".jnilib", ".dylib");

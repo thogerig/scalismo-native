@@ -21,7 +21,6 @@ public class Platform {
     private Platform() {}
 
     public static final String PLATFORM_UNKNOWN = "UNKNOWN";
-    public static final String PLATFORM_WIN32 = "windows_x86";
     public static final String PLATFORM_WIN64 = "windows_amd64";
     public static final String PLATFORM_LINUX64 = "linux_amd64";
     public static final String PLATFORM_MAC64 = "mac_x86_64";
@@ -33,7 +32,7 @@ public class Platform {
 
     public static boolean isWindows() {
         String p = getPlatform();
-        return p.equals(PLATFORM_WIN64) || p.equals(PLATFORM_WIN32);
+        return p.equals(PLATFORM_WIN64);
     }
 
     public static boolean isMac() {
