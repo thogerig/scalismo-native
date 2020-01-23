@@ -42,7 +42,6 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
     protected void getSupportedPlatformsInto(List<String> list) {
         list.add(Platform.PLATFORM_LINUX64);
         list.add(Platform.PLATFORM_WIN64);
-        list.add(Platform.PLATFORM_MAC64);
     }
 
     @Override
@@ -57,8 +56,10 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
 		 */
 
         if (Platform.isWindows()) {
-            list.add("msvcr100");
-            list.add("msvcp100");
+            list.add("concrt140");
+            list.add("msvcp140");
+            list.add("vcruntime140");
+            list.add("vcruntime140_1");
         }
         list.add("vtkDICOMParser");
         list.add("vtkdoubleconversion");
@@ -88,6 +89,9 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkCommonMisc");
         list.add("vtkCommonSystem");
         list.add("vtkWrappingJava");
+        if(Platform.isWindows()){
+            list.add("vtkWrappingJava-8.2");
+        }
         list.add("vtkgl2ps");
         list.add("vtkhdf5_hl");
         list.add("vtklibharu");
