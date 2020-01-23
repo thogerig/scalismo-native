@@ -6,7 +6,7 @@ organization in ThisBuild := productPackage.mkString(".")
 
 version in ThisBuild := productVersion
 
-javacOptions in ThisBuild ++= Seq("-source", "1.6", "-target", "1.6")
+javacOptions in ThisBuild ++= Seq("-source", "1.7", "-target", "1.7")
 
 scalacOptions in ThisBuild ++= Seq("-encoding", "UTF-8", "-Xlint", "-deprecation", "-unchecked", "-feature", "-target:jvm-1.6")
 
@@ -14,17 +14,15 @@ publishTo in ThisBuild := Some(Resolver.file("file",  new File( publishPrefix ))
 
 crossPaths in ThisBuild := false
 
-
-
 // the root project itself does not publish anything, but depends on the publish[-local] tasks.
 // Well, except that for the implementation, it also needs to be "fixed up".
 // So first, set the task to do nothing, then add the dependency. The other dependencies are found transitively.
 
 publishLocal := {}
 
-publishLocal <<= publishLocal dependsOn (publishLocalFixup in impl_all, publishLocalFixup in impl_linux64, publishLocalFixup in impl_mac64, publishLocalFixup in impl_win64, publishLocalFixup in impl_win)
+publishLocal <<= publishLocal dependsOn (publishLocalFixup in impl_all, publishLocalFixup in impl_linux64, publishLocalFixup in impl_win64)
 
 publish := {}
 
-publish <<= publish dependsOn (publishFixup in impl_all, publishFixup in impl_linux64, publishFixup in impl_mac64, publishFixup in impl_win64, publishFixup in impl_win)
+publish <<= publish dependsOn (publishFixup in impl_all, publishFixup in impl_linux64, publishFixup in impl_win64)
 
