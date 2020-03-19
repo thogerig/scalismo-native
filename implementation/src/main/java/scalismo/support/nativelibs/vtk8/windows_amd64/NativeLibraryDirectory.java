@@ -23,9 +23,6 @@ public class NativeLibraryDirectory extends scalismo.support.nativelibs.impl.Nat
 	@Override
 	protected String mapToResourceName(String baseName) {
 
-		if (!baseName.endsWith("Java") && baseName.contains("vtk") && !baseName.contains("Wrapping")) {
-			baseName = baseName.concat("-8.2");
-		}
 		return System.mapLibraryName(baseName);
 	}
 
