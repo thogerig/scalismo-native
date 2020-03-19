@@ -89,9 +89,6 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkCommonMisc");
         list.add("vtkCommonSystem");
         list.add("vtkWrappingJava");
-        if(Platform.isWindows()){
-            list.add("vtkWrappingJava-8.2");
-        }
         list.add("vtkgl2ps");
         list.add("vtkhdf5_hl");
         list.add("vtklibharu");
@@ -108,6 +105,7 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkCommonComputationalGeometry");
         list.add("vtkCommonDataModelJava");
         list.add("vtkCommonExecutionModel");
+        list.add("vtkTestingGenericBridge");
         list.add("vtkCommonComputationalGeometryJava");
         list.add("vtkCommonExecutionModelJava");
         list.add("vtkFiltersCore");
@@ -125,6 +123,8 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkIOVideo");
         list.add("vtkImagingCore");
         list.add("vtkImagingMath");
+        list.add("vtkPoissonReconstruction");
+        list.add("PoissonReconstructionJava");
         list.add("vtkFiltersCoreJava");
         list.add("vtkFiltersGeneral");
         list.add("vtkFiltersGeometry");
@@ -180,6 +180,7 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkImagingStatisticsJava");
         list.add("vtkImagingStencilJava");
         list.add("vtkParallelCore");
+        list.add("vtkTestingIOSQL");
         list.add("vtkFiltersAMR");
         list.add("vtkFiltersExtraction");
         list.add("vtkFiltersFlowPaths");
@@ -224,6 +225,7 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkRenderingLabel");
         list.add("vtkRenderingOpenGL2");
         list.add("vtkRenderingVolume");
+        list.add("vtkTestingRendering");
         list.add("vtkViewsCore");
         list.add("vtkDomainsChemistryJava");
         list.add("vtkDomainsChemistryOpenGL2");
@@ -249,6 +251,7 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkRenderingOpenGL2Java");
         list.add("vtkRenderingVolumeJava");
         list.add("vtkRenderingVolumeOpenGL2");
+        list.add("vtkTestingRenderingJava");
         list.add("vtkViewsCoreJava");
         list.add("vtkChartsCore");
         list.add("vtkDomainsChemistryOpenGL2Java");
@@ -277,9 +280,6 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkViewsInfovis");
         list.add("vtkGeovisCoreJava");
         list.add("vtkIOExportOpenGL2Java");
-        list.add("vtkIOExportPDFJava");
-        list.add("vtkInteractionImageJava");
-        list.add("vtkViewsInfovisJava");
 
 
         //vtkNativeLibrary.LoadAllNativeLibraries()
