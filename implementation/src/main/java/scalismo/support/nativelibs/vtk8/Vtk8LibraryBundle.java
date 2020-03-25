@@ -261,32 +261,6 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         if (!Platform.isWindows()) {
             list.add("vtkTestingRenderingJava");
         }
-        list.add("vtkViewsCore");
-        list.add("vtkDomainsChemistryJava");
-        list.add("vtkDomainsChemistryOpenGL2");
-        list.add("vtkFiltersHybridJava");
-        list.add("vtkFiltersParallelImaging");
-        list.add("vtkFiltersParallelJava");
-        list.add("vtkFiltersPointsJava");
-        list.add("vtkIOAMRJava");
-        list.add("vtkIOImportJava");
-        list.add("vtkIOInfovis");
-        list.add("vtkIOMINC");
-        list.add("vtkIOParallel");
-        list.add("vtkInfovisCoreJava");
-        list.add("vtkInfovisLayout");
-        list.add("vtkInteractionStyleJava");
-        list.add("vtkRenderingAnnotation");
-        list.add("vtkRenderingContext2D");
-        list.add("vtkRenderingFreeTypeJava");
-        list.add("vtkRenderingGL2PSOpenGL2");
-        list.add("vtkRenderingImageJava");
-        list.add("vtkRenderingLODJava");
-        list.add("vtkRenderingLabelJava");
-        list.add("vtkRenderingOpenGL2Java");
-        list.add("vtkRenderingVolumeJava");
-        list.add("vtkRenderingVolumeOpenGL2");
-        list.add("vtkTestingRenderingJava");
         list.add("vtkViewsCoreJava");
         list.add("vtkChartsCore");
         list.add("vtkDomainsChemistryOpenGL2Java");
