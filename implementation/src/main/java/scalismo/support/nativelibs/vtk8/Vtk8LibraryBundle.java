@@ -126,6 +126,7 @@ public class Vtk8LibraryBundle extends NativeLibraryBundle {
         list.add("vtkImagingCore");
         list.add("vtkImagingMath");
         list.add("vtkPoissonReconstruction");
+        list.add("PoissonReconstructionJava");
         list.add("vtkDICOM");
         list.add("vtkFiltersCoreJava");
         list.add("vtkFiltersGeneral");
